@@ -1,0 +1,23 @@
+\usepackage{fontspec}
+\setmonofont[
+Contextuals={Alternate}
+]{Fira Code}
+
+\lstset{%
+	language=Java,
+	basicstyle=\scriptsize\ttfamily,%
+	numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=10pt,%
+	showstringspaces=false
+	tabsize=4,
+	captionpos=b,
+	breaklines=true,
+	breakatwhitespace=false,
+	keywordstyle=\color{MidnightBlue}\ttfamily,
+	stringstyle=\color{ForestGreen}\ttfamily,
+	commentstyle=\color{RedOrange}\ttfamily,
+	xleftmargin=0.5cm
+}%
+
+\lstdefinelanguage{module}{
+	keywords={exports, uses, to, opens, requires, module},
+}

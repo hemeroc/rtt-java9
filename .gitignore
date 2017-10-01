@@ -1,0 +1,14 @@
+*.pdfpc
+*.pdf
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.synctex.gz
+*.vrb
+*.dvi
+*.fdb_latexmk
+*.fls
+*.xdv

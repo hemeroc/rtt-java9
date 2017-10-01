@@ -1,0 +1,63 @@
+\documentclass[10pt,xcolor={dvipsnames}]{beamer}
+\usetheme[progressbar=frametitle, block=fill]{metropolis}
+\usepackage{listings}
+\usepackage{pgfpages}
+\usepackage{pifont}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz-uml}
+\usepackage{csquotes}
+\usepackage{caption}
+
+\DeclareCaptionFormat{myformat}{#3}
+\captionsetup{format=myformat}
+
+\newcommand{\tmark}{$\thicksim$}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamertemplate{section in toc}[sections]
+\setbeamercovered{invisible}
+%\setbeameroption{show notes on second screen=bottom}
+
+\input{j9/meta}
+\input{j9/j9.code}
+
+
+%\titlegraphic{\vspace{.1\textheight}\includegraphics[height=.125\textheight]{figures/kotlinLogo2}}
+\begin{document}
+{
+	\title{Java 9}
+	\subtitle{for developers}
+	\maketitle
+}
+\begin{frame}{Table of contents}
+ \begin{columns}
+ 	\begin{column}{.45\textwidth}
+ 		\fontsize{10}{18}\selectfont
+		\tableofcontents[sections=1-5]
+	\end{column}
+	\begin{column}{.45\textwidth}
+		\fontsize{10}{18}\selectfont
+		\tableofcontents[sections=6-10]
+	\end{column}
+\end{columns}
+\end{frame}
+\input{j9/j9}
+
+\begin{frame}[standout]
+\fontsize{20}{0}\selectfont
+Thank You!\\
+\vspace{0.5cm}
+\fontsize{10}{0}\selectfont
+You can find all samples at\\
+\vspace{0.5cm}
+\url{https://github.com/hemeroc/rtt-java9}\\
+\vspace{0.5cm}
+\fontsize{20}{0}\selectfont
+Questions?
+\end{frame}
+
+\end{document}
